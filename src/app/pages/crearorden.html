@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crocante - Crear Orden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Conexión al CSS externo -->
+    <link rel="stylesheet" href="../css/crearorden.css">
+</head>
+<body>
+
+    <header>
+        <a href="inicio.html" class="logo">CROCANTE <i class="fas fa-star"></i></a>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="crearorden.html" class="active">Pedir online</a></li>
+                <li><a href="quienessomos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" style="text-decoration: none; color: #333; font-weight: 600;">Entrar</a>
+    </header>
+
+    <div class="order-container">
+        <!-- Formulario -->
+        <div class="order-form-section">
+            <h1 class="form-title">Finaliza tu Pedido</h1>
+            
+            <form>
+                <div class="form-group">
+                    <label>Tipo de Orden</label>
+                    <div class="delivery-options">
+                        <label class="radio-label">
+                            <input type="radio" name="tipo" checked>
+                            <div class="option-box">
+                                <i class="fas fa-motorcycle"></i>
+                                <span>Domicilio</span>
+                            </div>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="tipo">
+                            <div class="option-box">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span>Recoger</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label>Dirección de Entrega</label>
+                    <input type="text" placeholder="Calle, número, colonia...">
+                </div>
+
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="(555) 000-0000">
+                </div>
+            </form>
+        </div>
+
+        <!-- Resumen (Carrito simulado) -->
+        <div class="order-summary">
+            <h2 class="summary-title">Tu Pedido</h2>
+            
+            <div class="cart-item">
+                <span>1x Cubo Familiar</span>
+                <span>$24.99</span>
+            </div>
+            <div class="cart-item">
+                <span>2x Bebida Grande</span>
+                <span>$4.00</span>
+            </div>
+            <div class="cart-item">
+                <span>1x Papas Extra</span>
+                <span>$3.50</span>
+            </div>
+
+            <div class="total-line">
+                <span>TOTAL</span>
+                <span>$32.49</span>
+            </div>
+
+            <button class="btn-checkout">Pagar Ahora</button>
+        </div>
+    </div>
+
+</body>
+</html>
